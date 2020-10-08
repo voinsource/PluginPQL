@@ -7,9 +7,11 @@ PQL is as easier as it can get, simple push and pull of data. New information is
 ## Creating new PQL Objects
 ```java
 PQL pql = new PQL();
+//commands
 pql.write(...);
 pql.list(...);
 pql.read(...);
+pql.flush_all(...);
 ```
 
 ## Writing to DB
@@ -34,5 +36,5 @@ pql.pull(Context context);
 ## Flush DB
 To remove all the content from database file.
 ```java
-pql.flush(Context context)
+pql.flush_all(Context context);
 ```
